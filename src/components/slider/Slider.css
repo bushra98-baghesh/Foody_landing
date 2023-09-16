@@ -1,0 +1,28 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  overflow: hidden;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d7f0c4;
+  border-radius: 0 0 50% 50% /0 0 100% 100%;
+  transform: scaleX(1.5);
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .section {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    overflow: hidden;
+  }
+}
